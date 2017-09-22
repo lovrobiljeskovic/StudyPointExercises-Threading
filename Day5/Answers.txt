@@ -1,0 +1,15 @@
+When and why will we use Threads in our programs? We use Threads to make Java application faster by doing multiple things at same time.
+What is the Race Condition Problem and how can you solve it? Race Conidition is a state when two operations consist of multiple steps, and the sequences of steps overlap. We can fix it by adding synchronization techniques.
+Explain the Producer/Consumer-problem and how to solve it in modern Java Programs. In computing, the producer–consumer problem (also known as the bounded-buffer problem) is a classic example of a multi-process synchronization problem. The problem describes two processes, the producer and the consumer, which share a common, fixed-size buffer used as a queue.
+We can fix it by using BlockingQueue implementations or by wait() and notify() methods.
+Explain what Busy Waiting is and why it's a bad thing in a modern software system. Busy-waiting is a technique in which a process repeatedly checks to see if a condition is true, such as whether keyboard input or a lock is available.
+Describe Java's BlockingQueue interface, relevant implementations and methods relevant for the producer consumer problem.
+Implementations: ArrayBlockingQueue
+		 DelayQueue
+		 LinkedBlockingQueue
+		 PriorityBlockingQueue
+		 SynchronousQueue
+
+Methods -> INSERT: add(o), offer(o), put(o), offer(o, timeout, timeunit)
+	-> REMOVE: remove(o), poll(), takea(), poll(timeout, timeunit)
+
